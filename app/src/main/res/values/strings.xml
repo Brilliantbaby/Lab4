@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">lab4</string>
+    <string name="check_more_info">查看更多商品促销信息</string>
+    <string name="no_interest">不感兴趣</string>
+    <string name="share_goods">分享商品</string>
+    <string name="buy_now">一键下单</string>
+</resources>

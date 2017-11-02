@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.lab4.Activity2"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight = "2">
+        <RelativeLayout
+            android:id="@+id/toplayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray">
+            <ImageView
+                android:id="@+id/Item_Image"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/Item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="14sp"
+                />
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/Item_name"
+                android:layout_marginTop="12dp"
+                android:background="@mipmap/back"/>
+            <ImageButton
+                android:id="@+id/starButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/Item_name"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight = "1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/Item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/textblack"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/Item_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Item_price"
+                android:layout_marginTop="5dp"
+                android:layout_alignLeft="@id/Item_price"
+                android:textColor="@color/textgray"
+                android:textSize="14sp"
+                />
+
+            <ImageButton
+                android:id="@+id/shop_car"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/shoplist"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentTop="true"
+                />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:background="@color/backColor"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="70dp"
+                android:layout_alignTop="@id/shop_car"
+                android:layout_alignBottom="@id/shop_car"
+                />
+            <View
+                android:id="@+id/divider_line"
+                android:layout_height="2dp"
+                android:layout_width="350dp"
+                android:background="@color/backColor"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/Item_info"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/More_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider_line"
+                android:text="更多产品信息"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:textColor="@color/textblack"
+                />
+
+            <View
+                android:layout_height="20dp"
+                android:layout_width="match_parent"
+                android:background="@color/backColor"
+                android:layout_below="@id/More_info"
+                android:layout_marginTop="15dp"
+                />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/Info_list_total"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"></ListView>
+    </LinearLayout>
+</LinearLayout>
+
